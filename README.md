@@ -1,8 +1,25 @@
-# React + Vite
+# **Axios Integration App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application for managing products using the [Fake Store API](https://fakestoreapi.com). The app demonstrates the use of `axios` for making API requests and is styled with **Tailwind CSS** for a clean, minimalist design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
+
+- **Fetch Products**: Retrieve a list of products from the API and display them in a visually appealing card format.
+- **Add Product**: Add a new product to the store using a POST request.
+- **Responsive Design**: Ensures the app looks great on both desktop and mobile devices.
+
+---
+## **Screenshots**
+
+![Screenshot 1](img.png)
+![Screenshot 2](img_1.png)
+
+
+
+## **Installation**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/product-management-app.git
