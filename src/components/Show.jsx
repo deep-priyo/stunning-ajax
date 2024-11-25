@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import axios from "axios";
 
 const Show = () => {
@@ -14,17 +14,15 @@ const Show = () => {
             })
             .catch((error) => console.log(error));
     };
+    useEffect(() => {
+        getProducts();
+    },[])
     return (
         <>
 
                 <div className="bg-gray-50 min-h-screen flex flex-col items-center py-10">
                     <h1 className="text-4xl font-bold mb-8 text-gray-800">Product Management</h1>
-                    <button
-                        onClick={getProducts}
-                        className="px-6 py-3 bg-blue-500 text-white font-medium rounded-full shadow hover:bg-blue-600 transition"
-                    >
-                        Load Products
-                    </button>
+
                     <hr/>
                     <ul className="w-3/4">
                         {products.length > 0 ? (
@@ -38,7 +36,7 @@ const Show = () => {
                             ))
                         ) : (
                             <h2 className="text-gray-500 text-xl text-center mt-5">
-                                Click "Load Products" to fetch data...
+                                Loading Products...
                             </h2>
                         )}
                     </ul>
